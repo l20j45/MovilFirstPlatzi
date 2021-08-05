@@ -1,0 +1,46 @@
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.section1--table {
+    width: 70%;
+    height: 350px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 5% repeat(4, 1fr) 5%;
+    grid-template-columns: 55% 35% 10%;
+    grid-gap: 5px;
+    overflow: visible;
+}
+
+.section1--table-title {
+    grid-column: span 2;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 2rem;
+    color: var(--bitcoin-orange);
+    font-weight: bold;
+}
+
+.section1--button {
+    background: pink;
+}

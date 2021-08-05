@@ -1,0 +1,618 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ :root {
+    --color-Titles: #3366CC;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black
+}
+
+.sprites-img {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-81a290a5.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.fill-image {
+    width: 100%;
+    height: 100%;
+}
+
+.flex-center-wh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-center-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-w {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container-logo {
+    width: 60vw;
+    height: 10vh;
+    margin-top: 7vh;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+.container-logo__Text__Name {
+    font-size: 8vw;
+}
+
+.container-logo__Name__Text__First {
+    font-size: 12vw;
+}
+
+.container-logo__Name__Slogan {
+    font-size: 4vw;
+    color: gray;
+}
+
+.container-search {
+    display: grid;
+    grid-template-columns: 80% 1fr 20%;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 95vw;
+    height: 7vh;
+    margin-top: 10vh
+}
+
+.container-search__input {
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+}
+
+.container-search__input input {
+    width: 85%;
+    height: 100%;
+    outline: none;
+    font-size: 2rem;
+    border: none;
+    margin-left: 1rem;
+}
+
+.container-search__input p {
+    position: relative;
+    top: -1vh;
+    font-size: 1.5rem;
+}
+
+.picker-icon {
+    background-position: 0 -520px;
+    height: 8px;
+    width: 12px;
+    position: relative;
+    bottom: -1vh;
+    left: -2vh;
+}
+
+.container-search__button {
+    grid-column: 2/ -1;
+    background: #3366CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+    /* for button */
+    -webkit-appearance: button;
+    /* for input */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: 0;
+    color: inherit;
+}
+
+.search-button-icon {
+    display: inline-block;
+    background-position: 0 -669px;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    left: 14px
+}
+
+.container-languaje {
+    margin-top: 8vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 90vw;
+    height: 40vh;
+}
+
+.container-languaje__articles:nth-child(2),
+.container-languaje__articles:nth-child(6),
+.container-languaje__articles:nth-child(9),
+.container-languaje__articles:nth-child(12) {
+    grid-column: 2/4;
+}
+
+.container-languaje__articles:nth-child(3),
+.container-languaje__articles:nth-child(7),
+.container-languaje__articles:nth-child(10) {
+    grid-column: 5/7;
+}
+
+.container-languaje__articles:nth-child(4),
+.container-languaje__articles:nth-child(8),
+.container-languaje__articles:nth-child(11) {
+    grid-column: 8/10;
+}
+
+.container-languaje__articles__title a {
+    font-size: 1.5rem;
+    color: #3366CC;
+}
+
+.container-languaje__articles__numberarticles {
+    margin: 1vh 0;
+    font-weight: bold;
+}
+
+.leagueoffunny a {
+    font-size: .8rem;
+}
+
+.container-Translate {
+    margin-top: 3vh;
+    font-size: 1.5rem;
+    width: 90vw;
+    height: 5vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #F8F9FA;
+}
+
+.container-Translate__Icon,
+.container-Translate__Icon2 {
+    width: 15%;
+    height: 100%;
+}
+
+.container-Translate__Icon2 {
+    align-self: flex-end;
+}
+
+.picker-translate {
+    background-position: 0 -690px;
+    height: 25px;
+    width: 25px;
+    display: block;
+    position: relative;
+}
+
+.container-Translate__Text {
+    font-size: 4vw;
+    color: var(--color-Titles);
+}
+
+.picker-Arrow-Blue {
+    background-position: 0 -530px;
+    height: 5px;
+    width: 12px;
+    display: block;
+    position: relative;
+    top: -4vw;
+}
+
+.container-separador {
+    height: 1px;
+    margin-top: 8vw;
+    height: 20px;
+    border-bottom: 1px solid black;
+    width: 90vw;
+}
+
+.container-About {
+    margin-top: 2vh;
+    width: 90vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container-About-Foundation {
+    grid-column: 1/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Foundation-icon {
+    background-position: 0 -210px;
+    height: 47px;
+    width: 50px;
+    position: relative;
+}
+
+.container-About-Foundation__Text {
+    width: 80%;
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+.container-About-Source {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-About-Title {
+    font-size: 3vw;
+    color: #3366CE;
+    font-weight: bold;
+}
+
+.container-About-Text {
+    margin-top: 3px;
+    font-size: 3vw;
+    color: #7e8283;
+    font-weight: bold;
+}
+
+.base-icon {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.base-icon-40px {
+    height: 38px;
+    width: 40px;
+    position: relative;
+}
+
+.common-icon {
+    background-position: 0 0px;
+}
+
+.Wikivoyage-icon {
+    background-position: 0 -445px;
+}
+
+.Wikitionary-icon {
+    background-position: 0 -480px;
+}
+
+.Wikibooks-icon {
+    background-position: 0 -125px;
+}
+
+.Wikinews-icon {
+    background-position: 0 0px;
+}
+
+.Wikidata-icon {
+    background-position: 0 -163px;
+}
+
+.Wikiversity-icon {
+    background-position: 0 -408px;
+}
+
+.Wikiquote-icon {
+    background-position: 0 -288px;
+}
+
+.MediaWiki-icon {
+    background-position: 0 -50px;
+}
+
+.Wikisource-icon {
+    background-position: 0 -329px;
+}
+
+.Wikispecies-icon {
+    background-position: 0 -368px;
+}
+
+.Meta-Wiki-icon {
+    background-position: 0 -88px;
+}
+
+.container-Apps {
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 48% .5% 48%;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 15vh;
+    width: 95vw;
+    background: #F8F9FA;
+    border-radius: 5px;
+}
+
+.container-Apps__Title {
+    grid-column: 1/ 3 span;
+    font-size: 3vw;
+    font-weight: bold
+}
+
+.common-icon {
+    background-position: 0 -715px;
+}
+
+.container-Apps__Content {
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-Titles);
+}
+
+.container-Apps__Line {
+    background: black;
+}
+
+.TitleColor {
+    color: var(--color-Titles);
+}
+
+.container-Footer {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.container-Footer__Title {
+    font-size: 3.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-Footer__Links ul {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3.5vw;
+    color: var(--color-Titles);
+    font-weight: bold;
+}
+
+.container-logo2,
+.tablet-Show,
+.tablet-Show_Search,
+.show-Pc,
+.container-Footer2 {
+    display: none;
+}
+
+@media (min-width: 480px) {
+    .container {}
+}
+
+@media (min-width: 600px) {
+    .container-search {
+        margin-top: 10vh;
+        width: 85vw;
+        height: 4vh;
+        grid-template-columns: 90% 5% 5%;
+    }
+    .container-search__input {
+        font-size: 1.2rem;
+    }
+    .container-logo {
+        display: none;
+    }
+    .container-languaje {
+        margin-top: 8vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 650px;
+        height: 380px;
+    }
+    .container-logo2 {
+        grid-column: 1/ -1;
+        display: block;
+    }
+    .container-logo2 .container-logo__Text__Name {
+        font-size: 4vw;
+    }
+    .container-logo2 .container-logo__Name__Text__First {
+        font-size: 6vw;
+    }
+    .container-logo2 .container-logo__Name__Slogan {
+        font-size: 2vw;
+        color: gray;
+    }
+    .container-languaje__articles:nth-child(2),
+    .container-languaje__articles:nth-child(11) {
+        grid-column: 4/2 span;
+    }
+    .container-languaje__articles:nth-child(3),
+    .container-languaje__articles:nth-child(12) {
+        grid-column: 8/2 span;
+    }
+    .container-languaje__articles:nth-child(4),
+    .container-languaje__articles:nth-child(9) {
+        grid-column: 3/2 span;
+    }
+    .container-languaje__articles:nth-child(5) {
+        grid-column: 5/4 span;
+        grid-row: 3/ 6;
+    }
+    .container-languaje__articles:nth-child(6),
+    .container-languaje__articles:nth-child(10) {
+        grid-column: 9/2 span;
+    }
+    .container-languaje__articles:nth-child(7) {
+        grid-column: 2/3 span;
+    }
+    .container-languaje__articles:nth-child(8) {
+        grid-column: 9/3 span;
+    }
+    .tablet-Show {
+        display: block;
+    }
+    .tablet-Show_Search {
+        display: grid;
+    }
+    .phone-Show {
+        display: none;
+    }
+    .container-Translate {
+        margin-top: 15vh;
+    }
+    .container-About {
+        width: 90vw;
+        height: 70vh;
+    }
+    .container-About-Foundation__Text {
+        font-size: 2.5vw;
+    }
+    .container-About-Title {
+        font-size: 2.5vw;
+    }
+    .container-About-Text {
+        font-size: 2.5vw;
+    }
+    .container-Apps__Title {
+        font-size: 3vw;
+    }
+    .container-Apps__Content {
+        font-size: 3vw;
+    }
+    .cont .container-Footer {
+        display: none;
+    }
+    ainer-Footer__Title {
+        font-size: 3vw;
+    }
+    .container-Footer__Links ul {
+        font-size: 3vw;
+    }
+    .show-Pc,
+    .container-Footer2 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-languaje {
+        margin-top: 3vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 700px;
+        height: 400px;
+    }
+    .container-search {
+        margin-top: 2vh;
+        height: 8vh;
+        width: 60vw;
+    }
+    .container-Translate {
+        margin-top: 5vh;
+        width: 60vw;
+    }
+    .container-separador {
+        margin-top: 4vh;
+    }
+    .container-About {
+        margin-top: 10vh;
+        width: 90vw;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 40% 20% 20% 20%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-bottom: 10vh;
+    }
+    .container-About-Foundation {
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+    }
+    .container-About-Foundation__Text {
+        width: 80%;
+        font-size: 2vw;
+        text-align: justify;
+    }
+    .container-About-Apps {
+        grid-column: 1/span 1;
+        grid-row: 2/span 3;
+    }
+    .show-Pc {
+        margin-top: 3vw;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+    }
+    .container-About-Apps__icon {
+        grid-row: 1/span 2;
+        display: flex;
+        justify-content: center
+    }
+    .container-About-Apps--text {
+        grid-row: 1/span 2;
+    }
+    .container-About-Apps--text__text {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .container-Apps {
+        display: none;
+    }
+    .container-About-Title {
+        font-size: 2vw;
+    }
+    .container-About-Text {
+        font-size: 2vw;
+    }
+    .container-Footer {
+        display: none;
+    }
+    .container-Footer2 {
+        display: block;
+        height: 2vh;
+        width: 100%;
+        margin-top: 2vw;
+    }
+    .container-Footer__Title {
+        font-size: 1vw;
+        text-align: left;
+        text-align: center;
+    }
+}
+
+@media (min-width: 950px) {}
