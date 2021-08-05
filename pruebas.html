@@ -1,52 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+    <title>Batatabit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/prueba.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/modernizr.js"></script>
 </head>
 
 <body>
-    <div class="section1--table">
-        <div class="section1--table-title">
-            <p>Monedas</p>
+    <header>
+        <figure><img src="img/logo.svg" alt=""></figure>
+        <div class="header--title-container">
+            <h1>La proxima revolucion en el intercambio de criptomonedas</h1>
+            <p>Batabit te ayuda a navegar entre los diferentes precios y tendencias</p>
+            <a href="" class="header--button">Conoce Nuestros Planes <span></span></a>
         </div>
-        <div class="section1--button">siguiente</div>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="section1--image">
+                <figure><img src="../img/Bitcoin.svg" alt=""></figure>
+            </div>
+            <div class="section1--text">
+                <h2>Visualizamos todas las tasas de cambio,</h2>
+                <p>Traemos informacion en tiempo real de las casas de cambio y las monedas mas importantes del mundo</p>
+            </div>
 
-        <div class="section1--table-coin">
-            <p>Bitcoin</p>
-        </div>
-        <div class="section1--table-amount">
-            <p>$1.96<span class="decress"> </span></p>
-        </div>
-        <div class="section1--table-coin">
-            <p>Ethereum</p>
-        </div>
-        <div class="section1--table-amount">
-            <p>$0.07<span class="decress"> </span></p>
-        </div>
-        <div class="section1--table-coin">
-            <p>Rippie</p>
-        </div>
-        <div class="section1--table-amount">
-            <p>$2.15<span class="incress"> </span></p>
-        </div>
-        <div class="section1--table-coin">
-            <p>Stellar</p>
-        </div>
-        <div class="section1--table-amount">
-            <p>$4.96 <span class="decress"> </span></p>
-        </div>
 
-        <div class="section1--table-subtitle">
-            <p>Actualizado:</span>
-                <span>19 Julio 23:45</span>
-            </p>
-        </div>
-    </div>
+
+            <div class="section1--container-tables" id="contenedor-tablas">
+                <div class="section1--table">
+                    <p class="section1--table-title">Monedas</p>
+
+                    <div class="section1--table-coin">
+                        <p>Bitcoin</p>
+                    </div>
+                    <div class="section1--table-amount">
+                        <p>$1.96<span class="decress"> </span></p>
+                    </div>
+                    <div class="section1--table-coin">
+                        <p>Ethereum</p>
+                    </div>
+                    <div class="section1--table-amount">
+                        <p>$0.07<span class="decress"> </span></p>
+                    </div>
+                    <div class="section1--table-coin">
+                        <p>Rippie</p>
+                    </div>
+                    <div class="section1--table-amount">
+                        <p>$2.15<span class="incress"> </span></p>
+                    </div>
+                    <div class="section1--table-coin">
+                        <p>Stellar</p>
+                    </div>
+                    <div class="section1--table-amount">
+                        <p>$4.96 <span class="decress"> </span></p>
+                    </div>
+
+                    <div class="section1--table-subtitle">
+                        <p>Actualizado:</span>
+                            <span>19 Julio 23:45</span>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="section1--table table2">
+                    <p class="section1--table-title blue">Comision</p>
+
+                    <div class="section1--table-coin">
+                        <p>Bitrade</p>
+                    </div>
+                    <div class="section1--table-amount">
+                        <p>$12.96</p>
+                    </div>
+                    <div class="section1--table-coin">
+                        <p>Bitprecio</p>
+                    </div>
+                    <div class="section1--table-amount">
+                        <p>$13.07</p>
+                    </div>
+                    <div class="section1--table-coin">
+                        <p>Novadax</p>
+                    </div>
+                    <div class="section1--table-amount">
+                        <p>$13.15</p>
+                    </div>
+                    <div class="section1--table-coin">
+                        <p>Cointext</p>
+                    </div>
+                    <div class="section1--table-amount">
+                        <p>$14.96</p>
+                    </div>
+
+                    <div class="section1--table-subtitle backgroundblue">
+                        <p>Actualizado:</span>
+                            <span>19 Julio 23:45</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="boton dos" onClick="displaySection()"></button>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer></footer>
 </body>
+
+
+<script>
+    function displaySection() {
+        var contenedor;
+        var contenedor2;
+
+        contenedor = document.getElementsByClassName('section1--table')[0];
+        contenedor2 = document.getElementsByClassName('table2')[0];
+        if (contenedor.style.display == "grid") {
+
+            contenedor.style.display = "none";
+            contenedor2.style.display = "grid";
+        } else {
+
+            contenedor.style.display = "grid";
+            contenedor2.style.display = "none";
+
+        }
+    }
+</script>
 
 </html>
