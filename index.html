@@ -107,7 +107,7 @@
                         </p>
                     </div>
                 </div>
-                <button class="boton dos" onClick="displaySection()"></button>
+                <button class="boton" onClick="displaySection()"></button>
             </div>
 
         </section>
@@ -146,18 +146,69 @@
         </section>
         <section class="section4--container">
             <h3>Escoge el plan que mejor se ajuste a ti</h3>
-            <p>Cualquier plan te da acceso completo a nuestra plataforma</p>
-            <div>
-                <div>Recomendado</div>
-                <p>Pago anual</p>
-                <div>
-                    <span>$</span> <span> 99</span></div>
+            <p class="section4--subtitle">Cualquier plan te da acceso completo a nuestra plataforma</p>
+
+
+            <div class="section4--cards-container">
+
+                <div class="section4--card">
+                    <div class="section4--card-title">Recomendado</div>
+                    <p class="section4--card-periodicity">Pago anual</p>
+                    <div class="section4--card-money">
+                        <p class="section4--card-money_sign">$</p>
+                        <p class="section4--card-money_cost">99</p>
+                    </div>
+                    <p class="section4--card-disclaimer">*Ahorras $129 comparado al plan mensual.</p>
+                    <button onClick="choosePrice()" class="section4--card-button"><p> Escoger este</p> <span></span></button>
+                </div>
+
+
+                <div class="section4--card">
+                    <div class="section4--card-title">Recomendado</div>
+                    <p class="section4--card-periodicity">Pago anual</p>
+                    <div class="section4--card-money">
+                        <p class="section4--card-money_sign">$</p>
+                        <p class="section4--card-money_cost">99</p>
+                    </div>
+                    <p class="section4--card-disclaimer">*Ahorras $129 comparado al plan mensual.</p>
+                    <button onClick="choosePrice()" class="section4--card-button"><p> Escoger este</p> <span></span></button>
+                </div>
+
+                <div class="section4--card">
+                    <div class="section4--card-title">Recomendado</div>
+                    <p class="section4--card-periodicity">Pago anual</p>
+                    <div class="section4--card-money">
+                        <p class="section4--card-money_sign">$</p>
+                        <p class="section4--card-money_cost">99</p>
+                    </div>
+                    <p class="section4--card-disclaimer">*Ahorras $129 comparado al plan mensual.</p>
+                    <button onClick="choosePrice()" class="section4--card-button"><p> Escoger este</p> <span></span></button>
+                </div>
+                <button onClick="priceCard('prev')" class="section4--cards-container_button prev"></button>
+                <button onClick="priceCard('next')" class=" section4--cards-container_button next "></button>
+
             </div>
-            <p>*Ahorras $129 comparado al plan mensual.</p>
-            <button>Escoger este <span>flecha</span></button>
+
+
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer--container">
+
+            <p class="footer-paragraph">Linkedin</p>
+            <div class="footer--container-images">
+                <figure><img src="../img/logo-footer.svg" alt=""></figure>
+            </div>
+            <p class="footer-paragraph">Crinchbase</p>
+
+            <p class="footer-paragraph">Hackernews</p>
+
+
+
+
+
+        </div>
+    </footer>
 </body>
 <script>
     function displaySection() {
@@ -166,16 +217,24 @@
 
         contenedor = document.getElementsByClassName('section1--table')[0];
         contenedor2 = document.getElementsByClassName('table2')[0];
-        if (contenedor.style.display == "grid") {
+        if (contenedor.style.display == "grid ") {
 
-            contenedor.style.display = "none";
-            contenedor2.style.display = "grid";
+            contenedor.style.display = "none ";
+            contenedor2.style.display = "grid ";
         } else {
 
-            contenedor.style.display = "grid";
-            contenedor2.style.display = "none";
+            contenedor.style.display = "grid ";
+            contenedor2.style.display = "none ";
 
         }
+    }
+
+    function choosePrice() {
+        alert("precio ");
+    }
+
+    function priceCard(nav) {
+        alert(nav);
     }
 </script>
 
