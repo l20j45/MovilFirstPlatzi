@@ -1,0 +1,5 @@
+.section2--card--container {
+    width: 100vw;
+    display: flex;
+    background: grey;
+}

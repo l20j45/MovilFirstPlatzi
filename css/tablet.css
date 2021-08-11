@@ -1,0 +1,39 @@
+header img {
+    width: 350px;
+    height: 50px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.section2--card--container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section1 {
+    height: 110vw;
+}
+
+.section1--container-tables {
+    gap: 30px;
+}
+
+.table2 {
+    display: grid;
+}
+
+.boton {
+    display: none;
+}
+
+.section2--container {
+    height: 70vh;
+}
+
+.section3--container {
+    background-color: black;
+    background: url('../img/bitcoinbaby2x.jpg') no-repeat center/cover;
+}

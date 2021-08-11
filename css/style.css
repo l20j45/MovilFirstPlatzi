@@ -1,507 +1,518 @@
-                               :root {
-                                  --bitcoin-orange: #f7931a;
-                                  --soft-orange: #ffe9d5;
-                                  --secondary-blue: #1a9af7;
-                                  --soft-blue: #e7f5ff;
-                                  --warm-black: #282623;
-                                  --black: #201e1c;
-                                  --grey: #bababa;
-                                  --off-white: #faf8f7;
-                                  --just-white: #fff;
-                              }
-                              
-                              * {
-                                  box-sizing: border-box;
-                                  margin: 0;
-                                  padding: 0;
-                              }
-                              
-                              html {
-                                  font-size: 62.5%;
-                                  font-family: 'DM Sans', sans-serif;
-                              }
-                              
-                              header {
-                                  position: relative;
-                                  display: flex;
-                                  flex-direction: column;
-                                  justify-content: center;
-                                  width: 100%;
-                                  min-width: 320px;
-                                  height: 334px;
-                                  text-align: center;
-                                  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
-                              }
-                              
-                              header img {
-                                  width: 150px;
-                                  height: 24px;
-                                  margin-top: 60px;
-                                  align-self: center;
-                                  -webkit-animation: bgAnimateBitcoin 20s ease infinite;
-                                  -moz-animation: bgAnimateBitcoin 20s ease infinite;
-                                  animation: bgAnimateBitcoin 20s ease infinite;
-                              }
-                              
-                              .header--title-container {
-                                  width: 90%;
-                                  min-width: 288px;
-                                  max-width: 900px;
-                                  height: 218px;
-                                  margin-top: 40px;
-                                  text-align: center;
-                                  align-self: center;
-                              }
-                              
-                              .header--title-container h1,
-                              .section2--title {
-                                  font-size: 2.4rem;
-                                  font-weight: bold;
-                                  line-height: 2.6rem;
-                                  color: var(--just-white)
-                              }
-                              
-                              .header--title-container p {
-                                  margin-top: 25px;
-                                  font-size: 1.4rem;
-                                  font-weight: 500;
-                                  line-height: 1.8rem;
-                                  color: var(--soft-orange)
-                              }
-                              
-                              .header--button {
-                                  position: absolute;
-                                  top: 270px;
-                                  display: block;
-                                  left: calc(50% - 115px);
-                                  margin-top: 35px;
-                                  padding: 15px;
-                                  width: 229px;
-                                  height: 48px;
-                                  background-color: var(--off-white);
-                                  /*sombra*/
-                                  box-shadow: 0 4px 8px rgba(89, 34, 30, 0.16);
-                                  border: none;
-                                  border-radius: 5px;
-                                  font-size: 1.4rem;
-                                  font-weight: bold;
-                                  text-decoration: none;
-                                  color: var(--black);
-                              }
-                              
-                              .header--button:after {
-                                  content: '';
-                                  display: inline-block;
-                                  width: 13px;
-                                  height: 8px;
-                                  margin-left: 10px;
-                                  background-image: url('../icons/down-arrow.svg')
-                              }
-                              
-                              .section1 {
-                                  width: 100vw;
-                                  height: 110vh;
-                                  display: flex;
-                                  flex-direction: column;
-                                  align-items: center;
-                                  background-color: var(--off-white);
-                                  overflow: hidden;
-                              }
-                              
-                              .section1--image {
-                                  width: 200px;
-                                  height: 200px;
-                                  margin: 0 auto;
-                                  margin-top: 40px;
-                                  margin-bottom: 50px
-                              }
-                              
-                              .section1--text {
-                                  width: 90%;
-                                  max-width: 800px;
-                                  text-align: center;
-                                  margin-top: 20px;
-                              }
-                              
-                              .section1--text h2 {
-                                  font-size: 2rem;
-                                  font-weight: bold;
-                                  line-height: 2.6rem;
-                              }
-                              
-                              .section1--text p {
-                                  margin-top: 30px;
-                                  font-size: 1.4rem;
-                                  font-weight: 500;
-                                  line-height: 1.8rem;
-                              }
-                              
-                              .section1--container-tables {
-                                  width: 100vw;
-                                  height: 400px;
-                                  display: flex;
-                                  align-items: center;
-                                  justify-content: center;
-                                  transition-duration: 0.3s;
-                                  min-width: 400px;
-                              }
-                              
-                              .section1--table {
-                                  width: 70%;
-                                  height: 350px;
-                                  margin-top: 30px;
-                                  display: grid;
-                                  grid-template-rows: repeat(6 1fr);
-                                  grid-template-columns: 60% 40%;
-                                  grid-gap: 5px;
-                                  position: relative;
-                              }
-                              
-                              .section1--table-title {
-                                  grid-column: span 2;
-                                  display: flex;
-                                  align-self: flex-end;
-                                  margin-bottom: 20px;
-                                  margin-left: 20px;
-                                  font-size: 2rem;
-                                  color: var(--bitcoin-orange);
-                                  font-weight: bold;
-                              }
-                              
-                              .section1--table-coin,
-                              .section1--table-amount {
-                                  background-color: var(--just-white);
-                                  width: 100%;
-                                  height: 100%;
-                                  display: flex;
-                                  justify-content: center;
-                                  align-items: center;
-                              }
-                              
-                              .section1--table-coin p,
-                              .section1--table-amount p {
-                                  font-size: 1.8rem;
-                                  color: var(--grey);
-                                  font-weight: bold;
-                                  font-family: "Inter", sans-serif;
-                              }
-                              
-                              .section1--table-amount p {
-                                  font-size: 1.5rem;
-                              }
-                              
-                              .section1--table-amount span {
-                                  display: inline-block;
-                                  position: relative;
-                                  width: 20px;
-                                  height: 20px;
-                                  margin-left: 10px;
-                                  top: 10px;
-                              }
-                              
-                              .section1--table-amount .decress {
-                                  background-image: url('../icons/trending-down.svg');
-                                  background-repeat: no-repeat;
-                              }
-                              
-                              .section1--table-amount .incress {
-                                  background-image: url('../icons/trending-up.svg');
-                                  background-repeat: no-repeat;
-                              }
-                              
-                              .section1--table-subtitle {
-                                  grid-column: span 2;
-                                  display: flex;
-                                  position: relative;
-                                  font-size: 1.2rem;
-                                  font-weight: bold;
-                                  background-color: var(--soft-orange);
-                                  width: 70%;
-                                  height: 80%;
-                                  align-items: center;
-                                  justify-content: center;
-                                  border-radius: 5px;
-                                  left: calc(50% - 40%);
-                                  top: 10px;
-                              }
-                              
-                              .section1--table .blue {
-                                  color: var(--secondary-blue)
-                              }
-                              
-                              .table2 {
-                                  display: none;
-                              }
-                              
-                              .boton {
-                                  position: absolute;
-                                  z-index: 10;
-                                  left: 90%;
-                                  margin-top: 60px;
-                                  width: 30px;
-                                  height: 30px;
-                                  border-radius: 50%;
-                                  background-image: url('../icons/right-arrow.svg');
-                                  background-repeat: no-repeat;
-                                  border: none;
-                                  background-position: center;
-                                  opacity: .5;
-                                  background-color: var(--off-white);
-                              }
-                              
-                              .backgroundblue {
-                                  background-color: cyan;
-                              }
-                              
-                              .section2--container {
-                                  width: 100vw;
-                                  height: 120vh;
-                                  display: flex;
-                                  flex-direction: column;
-                                  align-items: center;
-                                  background-color: #201E1C;
-                              }
-                              
-                              .section2--image {
-                                  margin-top: -10px;
-                                  z-index: 10;
-                              }
-                              
-                              .section2--title {
-                                  margin-top: 50px;
-                                  text-align: center;
-                              }
-                              
-                              .section--parraph {
-                                  font-size: 1.4rem;
-                                  font-weight: bold;
-                                  line-height: 2.6rem;
-                                  color: var(--grey);
-                                  margin-top: 50px;
-                                  text-align: center;
-                              }
-                              
-                              .section2--card {
-                                  margin-top: 30px;
-                                  background: #282623;
-                                  width: 90%;
-                                  height: 150px;
-                                  border: 1px solid;
-                                  box-shadow: 3px 3px 2px .5px black;
-                              }
-                              
-                              .section2--card-image {
-                                  margin-top: 20px;
-                                  margin-left: 20px;
-                              }
-                              
-                              .section2--card h3 {
-                                  font-size: 2rem;
-                                  font-weight: bold;
-                                  color: var(--just-white);
-                                  margin-top: 10px;
-                                  margin-left: 20px;
-                              }
-                              
-                              .section2--card p {
-                                  font-size: 1.2rem;
-                                  font-weight: bold;
-                                  color: var(--grey);
-                                  margin-top: 10px;
-                                  margin-left: 20px;
-                                  text-align: justify;
-                                  margin-right: 20px;
-                              }
-                              
-                              .section3--container {
-                                  width: 100vw;
-                                  height: 387px;
-                                  display: flex;
-                                  flex-direction: column;
-                                  align-items: center;
-                                  background-color: white;
-                                  background-image: url('../img/bitcoinbaby.jpg');
-                                  background-repeat: no-repeat;
-                              }
-                              
-                              .section3--container h3 {
-                                  font-size: 3rem;
-                                  color: var(--just-white);
-                                  margin-top: 70px;
-                              }
-                              
-                              .section4--container {
-                                  width: 100vw;
-                                  height: 80vh;
-                                  display: flex;
-                                  flex-direction: column;
-                                  align-items: center;
-                                  background-color: var(--off-white);
-                              }
-                              
-                              .section4--container h3 {
-                                  font-size: 2.3rem;
-                                  margin-top: 50px;
-                                  text-align: center;
-                                  width: 88%;
-                                  font-weight: bold;
-                              }
-                              
-                              .section4--subtitle {
-                                  font-size: 1.2rem;
-                                  font-weight: bold;
-                                  color: #72706c;
-                                  margin-top: 30px;
-                                  text-align: center;
-                              }
-                              
-                              .section4--cards-container {
-                                  display: flex;
-                              }
-                              
-                              .section4--card {
-                                  width: 55vw;
-                                  height: 240px;
-                                  background: var(--off-white);
-                                  border-radius: 5px;
-                                  box-shadow: 0 4px 8px rgba(89, 34, 30, 0.16);
-                                  margin-bottom: 30px;
-                                  margin-top: 80px;
-                                  display: flex;
-                                  flex-direction: column;
-                                  align-items: center;
-                                  margin-left: 20px;
-                                  margin-right: 20px;
-                              }
-                              
-                              .section4--card-title {
-                                  position: relative;
-                                  width: 55%;
-                                  height: 13%;
-                                  border-radius: 5px;
-                                  background: var(--bitcoin-orange);
-                                  top: -5%;
-                                  text-align: center;
-                                  display: flex;
-                                  align-items: center;
-                                  justify-content: center;
-                                  color: var(--just-white);
-                                  font-weight: bold;
-                                  font-size: 1.2rem;
-                              }
-                              
-                              .section4--card-periodicity {
-                                  font-weight: bold;
-                                  font-size: 1.6rem;
-                              }
-                              
-                              .section4--card-money_sign {
-                                  font-weight: bold;
-                                  font-size: 1rem;
-                                  position: relative;
-                                  display: block;
-                                  margin-top: 40px;
-                              }
-                              
-                              .section4--card-money_cost {
-                                  position: relative;
-                                  font-weight: bold;
-                                  font-size: 5rem;
-                                  display: block;
-                                  margin-left: 5px;
-                                  margin-top: -24px;
-                              }
-                              
-                              .section4--card-disclaimer {
-                                  font-size: 1.2rem;
-                                  font-weight: bold;
-                                  color: #72706c;
-                                  margin-top: 20px;
-                                  text-align: center;
-                              }
-                              
-                              .section4--card-button {
-                                  border: 2px solid orange;
-                                  background: var(--just-white);
-                                  margin-top: 10px;
-                                  width: 90%;
-                                  height: 40px;
-                                  display: inline-block;
-                              }
-                              
-                              .section4--card-button p {
-                                  font-size: 1.8rem;
-                                  font-weight: bold;
-                                  display: inline-block;
-                              }
-                              
-                              .section4--card-button span {
-                                  background-image: url('../icons/orange-right-arrow.svg');
-                                  background-position: center;
-                                  width: 20px;
-                                  height: 20px;
-                                  position: relative;
-                                  display: inline-block;
-                                  top: 3px;
-                                  left: 7px;
-                              }
-                              
-                              .section4--cards-container_button {
-                                  position: absolute;
-                                  z-index: 10;
-                                  left: 78%;
-                                  margin-top: 180px;
-                                  border-radius: 50%;
-                                  background-image: url('../icons/right-arrow.svg');
-                                  background-repeat: no-repeat;
-                                  border: none;
-                                  background-position: center;
-                                  opacity: .5;
-                                  background-color: var(--off-white);
-                                  width: 30px;
-                                  height: 30px;
-                              }
-                              
-                              .prev {
-                                  left: 12%;
-                                  width: 30px;
-                                  height: 30px;
-                                  transform: rotate(-180deg);
-                              }
-                              
-                              .footer {
-                                  background: #F7931A;
-                                  width: 100vw;
-                                  height: 20vh;
-                                  display: flex;
-                                  flex-direction: column;
-                                  align-items: center;
-                                  justify-content: center;
-                              }
-                              
-                              .footer--container {
-                                  display: grid;
-                                  width: 60%;
-                                  height: 60px;
-                                  grid-template-columns: 50% 50%;
-                                  grid-template-rows: 1fr 1fr 1fr;
-                              }
-                              
-                              .footer--container-images {
-                                  grid-row: span 3;
-                                  grid-column: 2;
-                                  display: flex;
-                                  justify-content: center;
-                                  align-items: center;
-                                  flex-direction: column;
-                              }
-                              
-                              .footer-paragraph {
-                                  grid-column: 1;
-                                  display: flex;
-                                  justify-content: center;
-                                  align-items: center;
-                                  font-size: 1.5rem;
-                                  font-weight: bold;
-                                  color: var(--just-white);
-                              }
+   :root {
+      --bitcoin-orange: #f7931a;
+      --soft-orange: #ffe9d5;
+      --secondary-blue: #1a9af7;
+      --soft-blue: #e7f5ff;
+      --warm-black: #282623;
+      --black: #201e1c;
+      --grey: #bababa;
+      --off-white: #faf8f7;
+      --just-white: #fff;
+  }
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  html {
+      font-size: 62.5%;
+      font-family: 'DM Sans', sans-serif;
+  }
+  
+  header {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      min-width: 320px;
+      height: 334px;
+      text-align: center;
+      background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+  }
+  
+  header img {
+      width: 150px;
+      height: 24px;
+      margin-top: 60px;
+      align-self: center;
+      -webkit-animation: bgAnimateBitcoin 20s ease infinite;
+      -moz-animation: bgAnimateBitcoin 20s ease infinite;
+      animation: bgAnimateBitcoin 20s ease infinite;
+  }
+  
+  .header--title-container {
+      width: 90%;
+      min-width: 288px;
+      max-width: 900px;
+      height: 218px;
+      margin-top: 40px;
+      text-align: center;
+      align-self: center;
+  }
+  
+  .header--title-container h1,
+  .section2--title {
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 2.6rem;
+      color: var(--just-white)
+  }
+  
+  .header--title-container p {
+      margin-top: 25px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      color: var(--soft-orange)
+  }
+  
+  .header--button {
+      position: absolute;
+      top: 270px;
+      display: block;
+      left: calc(50% - 115px);
+      margin-top: 35px;
+      padding: 15px;
+      width: 229px;
+      height: 48px;
+      background-color: var(--off-white);
+      /*sombra*/
+      box-shadow: 0 4px 8px rgba(89, 34, 30, 0.16);
+      border: none;
+      border-radius: 5px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--black);
+  }
+  
+  .header--button:after {
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 8px;
+      margin-left: 10px;
+      background-image: url('../icons/down-arrow.svg')
+  }
+  
+  .section1 {
+      width: 100vw;
+      height: 110vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--off-white);
+      overflow: hidden;
+  }
+  
+  .section1--image {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      margin-top: 40px;
+      margin-bottom: 50px
+  }
+  
+  .section1--text {
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  .section1--text h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 2.6rem;
+  }
+  
+  .section1--text p {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+  }
+  
+  .section1--container-tables {
+      width: 100vw;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-duration: 0.3s;
+      min-width: 400px;
+  }
+  
+  .section1--table {
+      width: 70%;
+      height: 350px;
+      margin-top: 30px;
+      display: grid;
+      grid-template-rows: repeat(6 1fr);
+      grid-template-columns: 60% 40%;
+      grid-gap: 5px;
+      position: relative;
+      min-width: 280px;
+      max-width: 360px;
+  }
+  
+  .section1--table-title {
+      grid-column: span 2;
+      display: flex;
+      align-self: flex-end;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      font-size: 2rem;
+      color: var(--bitcoin-orange);
+      font-weight: bold;
+  }
+  
+  .section1--table-coin,
+  .section1--table-amount {
+      background-color: var(--just-white);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .section1--table-coin p,
+  .section1--table-amount p {
+      font-size: 1.8rem;
+      color: var(--grey);
+      font-weight: bold;
+      font-family: "Inter", sans-serif;
+  }
+  
+  .section1--table-amount p {
+      font-size: 1.5rem;
+  }
+  
+  .section1--table-amount span {
+      display: inline-block;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      margin-left: 10px;
+      top: 10px;
+  }
+  
+  .section1--table-amount .decress {
+      background-image: url('../icons/trending-down.svg');
+      background-repeat: no-repeat;
+  }
+  
+  .section1--table-amount .incress {
+      background-image: url('../icons/trending-up.svg');
+      background-repeat: no-repeat;
+  }
+  
+  .section1--table-subtitle {
+      grid-column: span 2;
+      display: flex;
+      position: relative;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: var(--soft-orange);
+      width: 70%;
+      height: 80%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      left: calc(50% - 40%);
+      top: 10px;
+  }
+  
+  .section1--table .blue {
+      color: var(--secondary-blue)
+  }
+  
+  .table2 {
+      display: none;
+  }
+  
+  .boton {
+      position: absolute;
+      z-index: 10;
+      left: 90%;
+      margin-top: 60px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-image: url('../icons/right-arrow.svg');
+      background-repeat: no-repeat;
+      border: none;
+      background-position: center;
+      opacity: .5;
+      background-color: var(--off-white);
+  }
+  
+  .backgroundblue {
+      background-color: cyan;
+  }
+  
+  .section2--container {
+      width: 100vw;
+      height: 120vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #201E1C;
+  }
+  
+  .section2--image {
+      margin-top: -10px;
+      z-index: 10;
+  }
+  
+  .section2--title {
+      margin-top: 50px;
+      text-align: center;
+  }
+  
+  .section--parraph {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 2.6rem;
+      color: var(--grey);
+      margin-top: 50px;
+      text-align: center;
+  }
+  
+  .section2--card {
+      margin-top: 30px;
+      background: #282623;
+      width: 90%;
+      height: 150px;
+      border: 1px solid;
+      box-shadow: 3px 3px 2px .5px black;
+      min-width: 280px;
+      max-width: 360px;
+  }
+  
+  .section2--card-image {
+      margin-top: 20px;
+      margin-left: 20px;
+  }
+  
+  .section2--card h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--just-white);
+      margin-top: 10px;
+      margin-left: 20px;
+  }
+  
+  .section2--card p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--grey);
+      margin-top: 10px;
+      margin-left: 20px;
+      text-align: justify;
+      margin-right: 20px;
+  }
+  
+  .section3--container {
+      width: 100vw;
+      height: 387px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      background: url('../img/bitcoinbaby.jpg') no-repeat center/cover;
+  }
+  
+  .section3--container h3 {
+      font-size: 3rem;
+      color: var(--just-white);
+      margin-top: 70px;
+  }
+  
+  .section4--container {
+      width: 100vw;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--off-white);
+      overflow-x: hidden;
+  }
+  
+  .section4--container h3 {
+      font-size: 2.3rem;
+      margin-top: 50px;
+      text-align: center;
+      width: 88%;
+      font-weight: bold;
+  }
+  
+  .section4--subtitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #72706c;
+      margin-top: 30px;
+      text-align: center;
+  }
+  
+  .section4--cards-container {
+      display: flex;
+      height: 360px;
+      width: 100%;
+      overflow-x: scroll;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+  }
+  
+  .section4--card {
+      display: flex;
+      position: relative;
+      scroll-snap-align: center;
+      width: 55vw;
+      height: 240px;
+      background: var(--off-white);
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(89, 34, 30, 0.16);
+      margin-bottom: 30px;
+      margin: 80px 30px 0;
+      flex-direction: column;
+      align-items: center;
+      min-width: 240px;
+      max-width: 360px;
+  }
+  
+  .section4--card-title {
+      position: relative;
+      width: 55%;
+      height: 13%;
+      border-radius: 5px;
+      background: var(--bitcoin-orange);
+      top: -5%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--just-white);
+      font-weight: bold;
+      font-size: 1.2rem;
+  }
+  
+  .section4--card-periodicity {
+      font-weight: bold;
+      font-size: 1.6rem;
+  }
+  
+  .section4--card-money_sign {
+      font-weight: bold;
+      font-size: 1rem;
+      position: relative;
+      display: block;
+      margin-top: 40px;
+  }
+  
+  .section4--card-money_cost {
+      position: relative;
+      font-weight: bold;
+      font-size: 5rem;
+      display: block;
+      margin-left: 5px;
+      margin-top: -24px;
+  }
+  
+  .section4--card-disclaimer {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #72706c;
+      margin-top: 20px;
+      text-align: center;
+  }
+  
+  .section4--card-button {
+      border: 2px solid orange;
+      background: var(--just-white);
+      margin-top: 10px;
+      width: 90%;
+      height: 40px;
+      display: inline-block;
+  }
+  
+  .section4--card-button p {
+      font-size: 1.8rem;
+      font-weight: bold;
+      display: inline-block;
+  }
+  
+  .section4--card-button span {
+      background-image: url('../icons/orange-right-arrow.svg');
+      background-position: center;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      display: inline-block;
+      top: 3px;
+      left: 7px;
+  }
+  
+  .section4--cards-container_button {
+      position: absolute;
+      z-index: 10;
+      left: 78%;
+      margin-top: 180px;
+      border-radius: 50%;
+      background-image: url('../icons/right-arrow.svg');
+      background-repeat: no-repeat;
+      border: none;
+      background-position: center;
+      opacity: .5;
+      background-color: var(--off-white);
+      width: 30px;
+      height: 30px;
+  }
+  
+  .prev {
+      left: 12%;
+      width: 30px;
+      height: 30px;
+      transform: rotate(-180deg);
+  }
+  
+  .footer {
+      background: #F7931A;
+      width: 100vw;
+      height: 20vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .footer--container {
+      display: grid;
+      width: 60%;
+      height: 60px;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  .footer--container-images {
+      grid-row: span 3;
+      grid-column: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  .footer-paragraph {
+      grid-column: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--just-white);
+  }
