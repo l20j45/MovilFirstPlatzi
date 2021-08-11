@@ -37,3 +37,30 @@ header img {
     background-color: black;
     background: url('../img/bitcoinbaby2x.jpg') no-repeat center/cover;
 }
+
+.section4--cards-container_button {
+    display: none;
+}
+
+.footer--container-images {
+    grid-row: span 3;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-paragraph {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+
+.footer--container-images img {
+    width: 120px;
+}
